@@ -2,9 +2,22 @@
 {
     internal class Program
     {
+        /*
+        INSTRUCTION
+
+        OPEN FirstPart.cs and SecondPart.cs. 
+        Read the instruction in each file and provide the necessary code to complete the task.
+        */
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            new FirstPart();
+            
+            Console.WriteLine("--------------------------------------------------");    
+
+            new SeondPart().Build();
+
+            Console.ReadKey();
         }
     }
 }
