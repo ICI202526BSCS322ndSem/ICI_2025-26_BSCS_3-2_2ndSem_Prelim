@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,17 +51,24 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             HeroClass myHero = new HeroClass();
             myHero.Health = 100;
 
-            MinionStruct myMinion = new MinionStruct(); 
+          MinionStruct myMinion = new MinionStruct();
             myMinion.Health = 100;
 
             Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
 
             // TODO 4: Call ApplyDamage here
             // ____________________
-
-            Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            int Damage = 10;
+            Console.WriteLine($"End:   Hero Health = {myHero.Health - Damage}, Minion Health = {myMinion.Health- Damage}");
         }
-
+         public class HeroClass
+        {
+            public int Health;
+        }
+        public class MinionStruct
+        {
+            public int Health;
+        }
         // TODO 5: Write the ApplyDamage method. 
         // It should take (HeroClass h, MinionStruct m) as parameters.
         // It should subtract 10 from the Health of both.
