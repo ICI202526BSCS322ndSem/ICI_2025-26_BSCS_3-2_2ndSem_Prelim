@@ -4,7 +4,7 @@
     {
         /*
         INSTRUCTION
-
+        //Dela cruz john paul
         OPEN FirstPart.cs and SecondPart.cs. 
         Read the instruction in each file and provide the necessary code to complete the task.
         */
