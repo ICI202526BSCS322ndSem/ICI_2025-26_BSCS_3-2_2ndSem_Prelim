@@ -15,29 +15,28 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         PRINT THE DEFINITION OF THE FOLLOWING CONCEPT OF OOP. YOU CAN GET THE DEFINITION FROM THE COMMENTED LINES BELOW
         */
 
-        public FirstPart()
-        {
-            Console.WriteLine("FIRST PART");
-            Console.WriteLine("Encapsulation");
-            Console.WriteLine("Description 1");
-            Console.WriteLine();
+public FirstPart()
+{
+    Console.WriteLine("FIRST PART");
+    Console.WriteLine("Encapsulation");
+    Console.WriteLine("Definition");
+    Console.WriteLine("Bundling data(variables) and methods together into a single unit and restricting direct accessf an  to some oobject's components.");
 
 
-            Console.WriteLine("Polymorphism");
-            Console.WriteLine("Description 1");
-            Console.WriteLine();
+    Console.WriteLine("Polymorphism");
+    Console.WriteLine("Definition");
+    Console.WriteLine("The ability of an object to take on many forms, allowing the same method to behave differently based on the object calling it.");
 
 
-            Console.WriteLine("Inheritance");
-            Console.WriteLine("Description 1");
-            Console.WriteLine();
+    Console.WriteLine("Inheritance");
+    Console.WriteLine("Definiton");
+    Console.WriteLine("The mechanism where a new class derives properties and behaviors from an existing parent class to promote code reuse.");
 
 
-            Console.WriteLine("Abstraction");
-            Console.WriteLine("Description 1");
-            Console.WriteLine();
-        }
-
+    Console.WriteLine("Abstraction");
+    Console.WriteLine("Definition");
+    Console.WriteLine("Hiding complex implementation details and showing only the essential features of the object to the user.");
+}
 
 //The ability of an object to take on many forms, allowing the same method to behave differently based on the object calling it.
 
