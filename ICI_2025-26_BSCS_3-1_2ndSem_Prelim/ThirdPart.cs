@@ -47,7 +47,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         public void Build()
         {
-            // TODO 3: Create instances of both and set Health to 100
+            //TODO 3: Create instances of both and set Health to 100
             HeroClass myHero = new HeroClass();
             myHero.Health = 100;
 
@@ -66,5 +66,15 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         // It should take (HeroClass h, MinionStruct m) as parameters.
         // It should subtract 10 from the Health of both.
         // ____________________
+    }
+
+    internal class MinionStruct
+    {
+        internal int Health;
+    }
+
+    internal class HeroClass
+    {
+        internal int Health;
     }
 }
