@@ -34,9 +34,40 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     {
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
+            Student student1 = new Student();
+            Student student2 = new Student();
 
-            //Put your code here
+            student1.StudentNumber = "2023-0398-IC";
+            student1.StudentName = "Maeven Ochangco";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 2;
+            student1.FavoriteFilipinoHero = "Lapu-lapu";
+
+            student2 = student1;
+
+            Console.WriteLine("student1 Name:" + student1.StudentName);
+            Console.WriteLine("student2 Name:" + student2.StudentName);
+
+            student2.StudentName = "Margarette Calixtro";
+
+            Console.WriteLine("student1 Name:" + student1.StudentName);
+            Console.WriteLine("student2 Name:" + student2.StudentName);
+
+
+            Console.ReadKey();
         }
+         
+        
+        public struct Student
+        {
+    public string StudentNumber;
+    public string StudentName;
+    public string Course;
+    public int YearLevel;
+    public int Section;
+    public string FavoriteFilipinoHero;
+
+         }
     }
-}
+   }
