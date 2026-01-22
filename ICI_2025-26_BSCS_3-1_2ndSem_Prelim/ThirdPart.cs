@@ -39,10 +39,8 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
 
         // TODO 1: Create a Class named 'HeroClass' with a public int Health
-        // ____________________
 
         // TODO 2: Create a Struct named 'MinionStruct' with a public int Health
-        // ____________________
 
 
         public void Build()
