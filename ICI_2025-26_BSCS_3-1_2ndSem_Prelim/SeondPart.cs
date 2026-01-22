@@ -29,14 +29,63 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     print the values of each property of student2 to the console to see the updated values.
     
     */
-
+    public class Student 
+    {
+        public string StudentNumber;
+        public string StudentName;
+        public string Course;
+        public int YearLevel;
+        public int Section;
+        public string FavoriteFilipinoHero;
+    }
     internal class SeondPart
     {
         public void Build()
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            student1.StudentNumber = "2023-1075-IC";
+            student1.StudentName = "Aries Contado";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 2;
+            student1.FavoriteFilipinoHero = "Jose Rizal";
+
+            Console.WriteLine("Student Number: " + student1.StudentNumber);
+            Console.WriteLine("Student Name: " + student1.StudentName);
+            Console.WriteLine("Course, Year Level & Section: " + student1.Course + " " + student1.YearLevel + "-" + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+            Console.WriteLine("");
+
+            student2 = student1;
+
+            student2.StudentName = "Jenard Phil Tabudlo";
+            student2.FavoriteFilipinoHero = "Andres Bonifacio";
+
+            Students(student1, student2);
+
+        }
+
+        private static void Students(Student student1, Student student2)
+        {
+            Console.WriteLine("1");
+            Console.WriteLine("Student Number: " + student1.StudentNumber);
+            Console.WriteLine("Student Name: " + student1.StudentName);
+            Console.WriteLine("Course, Year Level & Section: " + student1.Course + " " + student1.YearLevel + "-" + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+
+            Console.WriteLine("--------------------------------------------------");
+
+            Console.WriteLine("2");
+            Console.WriteLine("Student Number: " + student1.StudentNumber);
+            Console.WriteLine("Student Name: " + student2.StudentName);
+            Console.WriteLine("Course, Year Level & Section: " + student1.Course + " " + student1.YearLevel + "-" + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
         }
     }
+
+    
 }
