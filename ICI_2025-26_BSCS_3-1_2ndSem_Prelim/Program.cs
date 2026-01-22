@@ -1,5 +1,6 @@
 ﻿namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
+    //Jenard Phil Tabudlo
     internal class Program
     {
         /*
