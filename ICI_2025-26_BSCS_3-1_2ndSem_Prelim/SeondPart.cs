@@ -30,13 +30,47 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     
     */
 
+    //cretae your class here
+
+
     internal class SeondPart
     {
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
+            Student student1 = new Student();
+            Student student2 = new Student();
 
-            //Put your code here
+            student1.StudentNumber = "2026-1482";
+            student1.StudentName = "Margarette Calixtro";
+            student1.Course = "BSCS";
+            student1.Yearlevel = 3;
+            student1.Section = 2;
+            student1.FavoriteFiipinoHero = "Dr. Jose Rizal";
+
+            student2 = student1;
+
+            Console.WriteLine("Student1 Name: " + student1.StudentName);
+            Console.WriteLine("Student2 Name: " + student2.StudentName);
+
+            student2.StudentName = "Karen Diaz";
+
+            Console.WriteLine("Student1 Name: " + student1.StudentName);
+            Console.WriteLine("Student2 Name: " + student2.StudentName);
+
+
+            Console.ReadKey();
         }
+   
     }
+           public struct Student
+        {
+            public string StudentNumber;
+            public string StudentName;
+            public string Course;
+            public int Yearlevel;
+            public int Section;
+            public string FavoriteFiipinoHero;
+
+        }
+    
 }
