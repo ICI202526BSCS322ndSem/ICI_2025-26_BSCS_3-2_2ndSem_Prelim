@@ -1,4 +1,5 @@
-﻿using System;
+sing ICI_2025_26_BSCS_3_1_2ndSem_Prelim;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
+
+
+
+
     /*
     CREATE A STUDENT CLASS WITH THE FOLLOWING PROPERTIES
 
@@ -30,13 +35,59 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     
     */
 
+
     internal class SeondPart
     {
         public void Build()
         {
             Console.WriteLine("SECOND PART");
+          
+            
+                Student student1 = new Student();
+                Student student2 = new Student();
+               
 
-            //Put your code here
+
+                student1.StudentNumber = "2023-0001";
+                student1.Name = "Nhessica Avril P. Feria";
+                student1.Course = "Computer Science";
+                student1.Year = 3;
+                student1.Section = 2;
+                student1.FavoriteFilipinoHero = "Jose Rizal";
+
+
+                student2.StudentNumber = "2023-0001";
+                student2.Name = "Mikylla Santos";
+                student2.Course = "Computer Science";
+                student2.Year = 3;
+                student2.Section = 2;
+                student2.FavoriteFilipinoHero = "Lapu-Lapu";
+
+            Console.WriteLine("student1 Name:" + student1.Name);
+            Console.WriteLine("student1 FavoriteFilipinoHero:" + student1.FavoriteFilipinoHero);
+
+            student2.Name = "Mikylla Santos";
+            student2.FavoriteFilipinoHero="lapu-Lapu";
+
+            Console.WriteLine("student1 Name:" + student1.Name);
+            Console.WriteLine("student2 Name:" + student2.Name);
+            Console.WriteLine("student1 FavoriteFilipinoHero:" + student1.FavoriteFilipinoHero);
+            Console.WriteLine("2 FavoriteFilipinoHero:" + student2.FavoriteFilipinoHero);
+            Console.ReadLine();
+
+        }
+
+        public struct Student
+        {
+            public string StudentNumber;
+            public string Name;
+            public string Course;
+            public int Year;
+            public int Section;
+            public string FavoriteFilipinoHero;
         }
     }
 }
+
+   
+
