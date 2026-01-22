@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -47,20 +48,49 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         public void Build()
         {
-            // TODO 3: Create instances of both and set Health to 100
-            HeroClass myHero = new HeroClass();
-            myHero.Health = 100;
+             
+            Console.WriteLine("THIRD PART");
 
-            MinionStruct myMinion = new MinionStruct();
-            myMinion.Health = 100;
+            
+                HeroClass myHero = new HeroClass();
+                myHero.Health = 100;
 
-            Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+                MinionStruct myMinion = new MinionStruct();
+                myMinion.Health = 100;
 
-            // TODO 4: Call ApplyDamage here
-            // ____________________
+                Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
 
-            Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+                int damage
+
+                Console.WriteLine($"End:   Hero Health = {myHero.Health - Damage}, Minion Health = {myMinion.Health - Damage}");
+
+                public class HeroClass
+                {
+                public int Health;
+                }
+                public struct MinionStruct
+                {
+                public int Health;
+
+                }
+
         }
+
+
+        //// TODO 3: Create instances of both and set Health to 100
+        //HeroClass myHero = new HeroClass();
+        //myHero.Health = 100;
+
+        //MinionStruct myMinion = new MinionStruct();
+        //myMinion.Health = 100;
+
+        //Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+
+        //// TODO 4: Call ApplyDamage here
+        //// ____________________
+
+        //Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+    }
 
         // TODO 5: Write the ApplyDamage method. 
         // It should take (HeroClass h, MinionStruct m) as parameters.
