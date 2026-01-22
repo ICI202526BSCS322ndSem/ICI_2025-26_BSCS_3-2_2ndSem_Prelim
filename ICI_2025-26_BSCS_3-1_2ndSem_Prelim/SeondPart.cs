@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ICI_2025_26_BSCS_3_1_2ndSem_Prelim.SeondPart;
 
 namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 {
@@ -37,6 +38,47 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("SECOND PART");
 
             //Put your code here
+
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            student1.studnum = "6769";
+            student1.studname = "Ace";
+            student1.course = "BSCS";
+            student1.yearlevel = 2026;
+            student1.section = 3-2;
+            student1.favefilipinohero = "Jose Rizal";
+            Console.WriteLine(student1.studnum);
+            Console.WriteLine(student1.studname);
+            Console.WriteLine(student1.course);
+            Console.WriteLine(student1.yearlevel);
+            Console.WriteLine(student1.section);
+            Console.WriteLine(student1.favefilipinohero);
+            Console.WriteLine("  ");
+
+            student2 = student1;
+
+            student2.studname = "Goku";
+            student2.favefilipinohero = "Lapu Lapu";
+            Console.WriteLine(student2.studnum);
+            Console.WriteLine(student2.studname);
+            Console.WriteLine(student2.course);
+            Console.WriteLine(student2.yearlevel);
+            Console.WriteLine(student2.section);
+            Console.WriteLine(student2.favefilipinohero);
+
         }
+
+        public class Student()
+        {
+            public string studnum;
+            public string studname;
+            public string course;
+            public int yearlevel;
+            public int section;
+            public string favefilipinohero;
+
+        }
+
     }
 }
