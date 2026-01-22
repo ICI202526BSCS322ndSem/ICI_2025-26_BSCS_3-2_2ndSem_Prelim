@@ -36,7 +36,44 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            //Put your code here 
+
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            student1.StudentNumber = "ICI-2026-012";
+            student1.StudentName = "Dela Cruz";
+            student1.Course = "BSCS";
+            student1.YearLevel = "3";
+            student1.Section = 2;
+            student1.FavoriteFilipinoHero = "Jose Rizal";
+
+            student2 = student1;
+            student2.StudentName = "Ramos";
+            student2.FavoriteFilipinoHero = "Heneral Luna";
+
+            Print(student1 , student2);         
         }
+        public void Print(Student student1, Student student2) 
+        {
+            Console.WriteLine("Student Number :" + student1.StudentNumber);
+            Console.WriteLine("Student Name :" + student1.StudentName);
+            Console.WriteLine("Course :" + student1.Course);
+            Console.WriteLine("Year Level:" + student1.YearLevel);
+            Console.WriteLine("Section :" + student1.Section);
+            Console.WriteLine("Favorite Hero :" + student1.FavoriteFilipinoHero);
+            Console.WriteLine("\n",student2);
+
+        }
+    }
+
+    public class Student 
+    {
+        public string StudentNumber;
+        public string StudentName;
+        public string Course;
+        public string YearLevel;
+        public int Section;
+        public string FavoriteFilipinoHero;
     }
 }
