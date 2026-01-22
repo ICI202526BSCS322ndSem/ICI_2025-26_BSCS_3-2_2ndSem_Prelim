@@ -12,10 +12,14 @@
         static void Main(string[] args)
         {
             new FirstPart();
-            
-            Console.WriteLine("--------------------------------------------------");    
+
+            Console.WriteLine("--------------------------------------------------");
 
             new SeondPart().Build();
+
+            Console.WriteLine("--------------------------------------------------");
+
+            new ThirdPart().Build();
 
             Console.ReadKey();
         }
