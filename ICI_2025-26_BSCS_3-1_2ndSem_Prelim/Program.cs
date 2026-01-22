@@ -3,7 +3,7 @@
     internal class Program
     {
 
-        /* Delacruz Kevin ANgel
+        /* FERIA NHESSICA
         INSTRUCTION
 
         OPEN FirstPart.cs and SecondPart.cs. 
