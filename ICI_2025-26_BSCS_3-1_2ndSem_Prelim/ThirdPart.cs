@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -58,13 +59,30 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
             // TODO 4: Call ApplyDamage here
             // ____________________
+            ApplyDamage( myHero, myMinion );
 
             Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
+        public class HeroClass
+        {
+            public int Health;
+        }
 
-        // TODO 5: Write the ApplyDamage method. 
-        // It should take (HeroClass h, MinionStruct m) as parameters.
-        // It should subtract 10 from the Health of both.
-        // ____________________
-    }
+        public struct MinionStruct
+        {
+            public int Health;
+        }
+        public void ApplyDamage(HeroClass H, MinionStruct M)
+        {
+            H.Health -= 10;
+            M.Health -= 10;
+        }
+
+
+
+    // TODO 5: Write the ApplyDamage method. 
+    // It should take (HeroClass h, MinionStruct m) as parameters.
+    // It should subtract 10 from the Health of both.
+    // ____________________
+}
 }
