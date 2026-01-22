@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,6 +37,54 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             Console.WriteLine("SECOND PART");
 
             //Put your code here
+            Student student1 = new Student();
+            Student student2 = new Student();
+
+            student2 = student1;
+
+            student1.StudentNumber = "2023 - 0689";
+            student1.Name = "Jerico";
+            student1.Course = "Computer Science";
+            student1.Year = 3;
+            student1.Section = 2;
+            student1.FavoriteFilipinoHero = "Luna";
+            Console.WriteLine("Student 1");
+            Console.WriteLine("Student Number: "+ student1.StudentNumber);
+            Console.WriteLine("Name:" + student1.Name);
+            Console.WriteLine("Course:" + student1.Course);
+            Console.WriteLine("Year: " + student1.Year);
+            Console.WriteLine("Section: " + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+            Console.WriteLine();
+            student2.Name = "Guimban";
+            student2.FavoriteFilipinoHero = "Rizal";
+            Console.WriteLine("Student 1");
+            Console.WriteLine("Student Number: " + student1.StudentNumber);
+            Console.WriteLine("Name:" + student1.Name);
+            Console.WriteLine("Course:" + student1.Course);
+            Console.WriteLine("Year: " + student1.Year);
+            Console.WriteLine("Section: " + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+            Console.WriteLine();
+            Console.WriteLine("Student 2");
+            Console.WriteLine("Student Number: " + student2.StudentNumber);
+            Console.WriteLine("Name:" + student2.Name);
+            Console.WriteLine("Course:" + student2.Course);
+            Console.WriteLine("Year: " + student2.Year);
+            Console.WriteLine("Section: " + student2.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
+
+        }
+        public class Student
+        {
+            public string StudentNumber;
+            public string Name;
+            public string Course;
+            public int Year;
+            public int Section;
+            public string FavoriteFilipinoHero;
+
+
         }
     }
 }
