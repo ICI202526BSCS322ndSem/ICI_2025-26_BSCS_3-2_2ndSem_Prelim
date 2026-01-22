@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        /*
+        /*Maeven Ochangco
         INSTRUCTION
 
         OPEN FirstPart.cs and SecondPart.cs. 
