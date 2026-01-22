@@ -51,7 +51,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             HeroClass myHero = new HeroClass();
             myHero.Health = 100;
 
-            MinionStruct myMinion = new MinionStruct();
+            MinionStruct myMinion = new MinionStruct(); 
             myMinion.Health = 100;
 
             Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
