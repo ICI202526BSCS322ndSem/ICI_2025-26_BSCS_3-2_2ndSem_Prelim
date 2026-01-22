@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +36,24 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            Student student = new Student();
+            string student.StudentNumber = "2025-12345";
+            string student.StudentName = "Juan Dela Cruz";
+            string student.Course = "BSCS";
+            int student.YearLevel = 3;
+            string student.Section = 1;
+            string student.FavoriteFilipinoHero = "Jose Rizal";
+            Console.WriteLine("Student 1 Details:");
+            Console.WriteLine($"Student Number: {student.StudentNumber}");
+            Console.WriteLine($"Student Name: {student.StudentName}");
+            Console.WriteLine($"Course: {student.Course}");
+            Console.WriteLine($"Year Level: {student.YearLevel}");
+            Console.WriteLine($"Section: {student.Section}");
+            Console.WriteLine($"Favorite Filipino Hero: {student.FavoriteFilipinoHero}");
+            Console.WriteLine();
+            
+            Student student2 = student;
+  
         }
     }
 }
