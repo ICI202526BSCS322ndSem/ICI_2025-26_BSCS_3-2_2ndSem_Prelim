@@ -32,7 +32,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     */
 
 
-    internal class SecondPart
+    internal class SeondPart
     {
         public void Build()
         {
