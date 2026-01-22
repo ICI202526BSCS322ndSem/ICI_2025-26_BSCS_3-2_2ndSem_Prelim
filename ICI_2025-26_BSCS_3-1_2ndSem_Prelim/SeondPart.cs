@@ -29,14 +29,53 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     print the values of each property of student2 to the console to see the updated values.
     
     */
-
+    public class Student
+    {
+        public string StudentNumber;
+        public string StudentName;
+        public string Course;
+        public int YearLevel;
+        public int Section;
+        public string FavoriteFilipinoHero;
+    }
     internal class SeondPart
     {
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
+            //Console.WriteLine("SECOND PART");
 
-            //Put your code here
+            Student student1 = new Student();
+            student1.StudentNumber = "19999-09876";
+            student1.StudentName = "veejervs";
+            student1.Course = "BSComputer Science";
+            student1.YearLevel = 3;
+            student1.Section = 1;
+            student1.FavoriteFilipinoHero = "Jose Rizal";
+            Student1(student1);
+
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Student student2 = new Student();
+            student2 = student1;
+
+            student2.StudentName = "jenarddo";
+            student2.FavoriteFilipinoHero = "Bonifacio";
+            Student1(student1);
+            Student2(student1, student2);
+        }
+
+        private static void Student1(Student student1)
+        {
+            Console.WriteLine("Student 1");
+            Console.WriteLine("Name :" + student1.StudentName + ", Student Number :" + student1.StudentNumber);
+            Console.WriteLine("Course: " + student1.Course + ", Year Level: " + student1.YearLevel + ", Section: " + student1.Section + ", Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+        }
+
+        private static void Student2(Student student1, Student student2)
+        {
+            Console.WriteLine("Student 2");
+            Console.WriteLine("Name :" + student2.StudentName + ", Student Number :" + student1.StudentNumber);
+            Console.WriteLine("Course: " + student1.Course + ", Year Level: " + student1.YearLevel + ", Section: " + student1.Section + ", Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
         }
     }
 }
