@@ -54,17 +54,31 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             MinionStruct myMinion = new MinionStruct();
             myMinion.Health = 100;
 
-            Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            Console.WriteLine($"Start: Hero Health =  {myHero.Health}, Minion Health = {myMinion.Health}");
 
             // TODO 4: Call ApplyDamage here
             // ____________________
+            ApplyDamage(myHero, myMinion);
 
-            Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            Console.WriteLine($"End: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
 
-        // TODO 5: Write the ApplyDamage method. 
-        // It should take (HeroClass h, MinionStruct m) as parameters.
-        // It should subtract 10 from the Health of both.
-        // ____________________
+        public void ApplyDamage(HeroClass myHero, MinionStruct myMinion)
+        {
+            myHero.Health -= 10;
+            myMinion.Health -= 10;
+        }
     }
+
+    public class HeroClass
+    {
+        public int Health;
+    }
+
+    public struct MinionStruct
+    {
+        public int Health;
+    }
+
+
 }
