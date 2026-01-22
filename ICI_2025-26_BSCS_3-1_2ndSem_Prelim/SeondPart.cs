@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,11 +32,30 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
     internal class SeondPart
     {
-        public void Build()
+        public void Build() 
         {
-            Console.WriteLine("SECOND PART");
+            Console.WriteLine("STUDENT NUMBER");
+            Console.WriteLine("2023-0212-IC");
+
+            Console.WriteLine("NAME");
+            Console.WriteLine("Blyca");
+
+            Console.WriteLine("COURSE");
+            Console.WriteLine("Bachelor of Science in Computer Science");
+
+            Console.WriteLine("YEAR LEVEL");
+            Console.WriteLine("3");
+
+            Console.WriteLine("SECTION");
+            Console.WriteLine("3-2");
+
+            Console.WriteLine("FAVORITE FILIPINO HERO");
+            Console.WriteLine("Rizal");
+
 
             //Put your code here
+          
+
         }
     }
 }
