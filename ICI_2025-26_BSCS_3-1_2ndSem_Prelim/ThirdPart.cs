@@ -59,8 +59,21 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
             // TODO 4: Call ApplyDamage here
             // ____________________
 
-            Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
+            int Damage = 10;
+
+            Console.WriteLine($"End:   Hero Health = {myHero.Health -  Damage}, Minion Health = {myMinion.Health - Damage}");
+
+
         }
+        public class HeroClass
+        {
+            public int Health;
+        }
+        public struct MinionStruct
+        {
+            public int Health;
+        }
+
 
         // TODO 5: Write the ApplyDamage method. 
         // It should take (HeroClass h, MinionStruct m) as parameters.
