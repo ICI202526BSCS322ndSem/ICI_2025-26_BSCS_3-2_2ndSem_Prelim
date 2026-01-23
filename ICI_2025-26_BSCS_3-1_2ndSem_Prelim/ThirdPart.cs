@@ -52,6 +52,9 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
         public void Build()
         {
+            Console.WriteLine("THIRD PART");
+            Console.WriteLine("");
+
             // TODO 3: Create instances of both and set Health to 100
             HeroClass myHero = new HeroClass();
             myHero.Health = 100;
