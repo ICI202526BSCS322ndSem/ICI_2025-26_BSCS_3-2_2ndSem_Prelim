@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -30,13 +31,53 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
     
     */
 
+    public class Student
+    {
+        public string StudentNumber;
+        public string StudentName;
+        public string Course;
+        public int YearLevel;
+        public int Section;
+        public string FavoriteFilipinoHero;
+    }
+
     internal class SeondPart
     {
         public void Build()
         {
-            Console.WriteLine("SECOND PART");
+            Student student1 = new Student();
+            Student student2 = new Student();
 
-            //Put your code here
+            student1.StudentNumber = "2023-0862-IC";
+            student1.StudentName = "Karylle Ann Herrera";
+            student1.Course = "BSCS";
+            student1.YearLevel = 3;
+            student1.Section = 2;
+            student1.FavoriteFilipinoHero = "Jose Rizal";
+
+            Console.WriteLine("SECOND PART");
+            Console.WriteLine("");
+            Console.WriteLine("Student Number: " + student1.StudentNumber);
+            Console.WriteLine("Student Name: " + student1.StudentName);
+            Console.WriteLine("Course: " + student1.Course);
+            Console.WriteLine("Year Level: " + student1.YearLevel);
+            Console.WriteLine("Section: " + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student1.FavoriteFilipinoHero);
+
+            student2 = student1;
+
+            student2.StudentName = "Raizen Francisco";
+            student2.StudentNumber = "2023-0878-IC";
+            student2.FavoriteFilipinoHero = "Andres Bonifactio";
+
+            Console.WriteLine("");
+            Console.WriteLine("Student Number: " + student2.StudentNumber);
+            Console.WriteLine("Student Name: " + student2.StudentName);
+            Console.WriteLine("Course: " + student1.Course);
+            Console.WriteLine("Year Level: " + student1.YearLevel);
+            Console.WriteLine("Section: " + student1.Section);
+            Console.WriteLine("Favorite Filipino Hero: " + student2.FavoriteFilipinoHero);
+
         }
     }
 }

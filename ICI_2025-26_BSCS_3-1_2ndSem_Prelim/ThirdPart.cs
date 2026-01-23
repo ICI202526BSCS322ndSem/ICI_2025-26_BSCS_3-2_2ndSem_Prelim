@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,13 +38,17 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
          */
 
 
-
         // TODO 1: Create a Class named 'HeroClass' with a public int Health
-        // ____________________
+        public class HeroClass
+        {
+            public int Health;
+        }
 
         // TODO 2: Create a Struct named 'MinionStruct' with a public int Health
-        // ____________________
-
+        public struct MinionStruct
+        {
+            public int Health;
+        }
 
         public void Build()
         {
@@ -56,8 +61,8 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
             Console.WriteLine($"Start: Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
 
-            // TODO 4: Call ApplyDamage here
-            // ____________________
+            //TODO 4: Call ApplyDamage Here
+            ApplyDamage(myHero, myMinion);
 
             Console.WriteLine($"End:   Hero Health = {myHero.Health}, Minion Health = {myMinion.Health}");
         }
@@ -65,6 +70,12 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         // TODO 5: Write the ApplyDamage method. 
         // It should take (HeroClass h, MinionStruct m) as parameters.
         // It should subtract 10 from the Health of both.
-        // ____________________
+        public void ApplyDamage(HeroClass myHero, MinionStruct myMinion)
+        {
+            myHero.Health -= 10;
+            myMinion.Health -= 10;
+        }
     }
+
+
 }
