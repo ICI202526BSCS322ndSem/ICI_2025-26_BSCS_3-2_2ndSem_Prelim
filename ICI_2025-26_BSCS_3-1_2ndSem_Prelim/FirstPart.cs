@@ -19,12 +19,12 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
         {
             Console.WriteLine("FIRST PART");
             Console.WriteLine("Encapsulation");
-            Console.WriteLine("Hiding complex implementation details and showing only the essential features of the object to the user.");
+            Console.WriteLine("Bundling data (variables) and methods together into a single unit and restricting direct access to some of an object's components.");
             Console.WriteLine();
 
 
             Console.WriteLine("Polymorphism");
-            Console.WriteLine("Bundling data (variables) and methods together into a single unit and restricting direct access to some of an object's components.");
+            Console.WriteLine("The ability of an object to take on many forms, allowing the same method to behave differently based on the object calling it.");
             Console.WriteLine();
 
 
@@ -34,7 +34,7 @@ namespace ICI_2025_26_BSCS_3_1_2ndSem_Prelim
 
 
             Console.WriteLine("Abstraction");
-            Console.WriteLine("The ability of an object to take on many forms, allowing the same method to behave differently based on the object calling it.");
+            Console.WriteLine("Hiding complex implementation details and showing only the essential features of the object to the user.");
             Console.WriteLine();
         }
 
